@@ -1,0 +1,6 @@
+# ASCII OUTPUT FORMAT
+/gate/output/ascii/enable
+/gate/output/ascii/setFileName test
+/gate/output/ascii/setOutFileHitsFlag 0
+/gate/output/ascii/setOutFileSinglesFlag 1
+/gate/output/ascii/setOutFileCoincidencesFlag 1

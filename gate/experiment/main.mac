@@ -1,0 +1,29 @@
+# INITIALIZE
+
+/gate/run/initialize
+
+# GEOMETRY
+
+/control/execute ./geometry/geometry_posics-II.mac
+
+# PHYSICS
+
+/control/execute ./physics/physics.mac
+
+# SOURCE
+
+/control/execute ./sources/source_Tc99m.mac
+
+# ACQUISITION
+
+/gate/application/setTimeSlice 0.001
+/gate/application/setTimeStart 0.0
+/gate/application/setTimeStop 10.0
+
+## SEED
+
+#/gate/random/setEngineSeed auto
+/gate/random/setEngineSeed 123456789
+
+## START
+/gate/application/start
