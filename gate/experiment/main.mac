@@ -1,18 +1,24 @@
-# INITIALIZE
 
-/gate/run/initialize
+# /control/macroPath /home/users/a/alispach/software/posics-mc/gate/experiment
+
+# VISUALIZATION
+/vis/open OGL
+/vis/scene/add/axes
+
+# MATERIALS
+/gate/geometry/setMaterialDatabase material/GateMaterials.db
 
 # GEOMETRY
 
-/control/execute ./geometry/geometry_posics-II.mac
+/control/execute geometry/geometry_posics-II.mac
 
 # PHYSICS
 
-/control/execute ./physics/physics.mac
+/control/execute physics/physics.mac
 
 # SOURCE
 
-/control/execute ./sources/source_Tc99m.mac
+/control/execute sources/source_Tc99m.mac
 
 # ACQUISITION
 
