@@ -1,35 +1,52 @@
 
 # /control/macroPath /home/users/a/alispach/software/posics-mc/gate/experiment
 
-# VISUALIZATION
-/vis/open OGL
-/vis/scene/add/axes
+/gate/output/allowNoOutput
+
 
 # MATERIALS
 /gate/geometry/setMaterialDatabase material/GateMaterials.db
-
 # GEOMETRY
 
-/control/execute geometry/geometry_posics-II.mac
+/control/execute ./geometry/geometry_posics-II.mac
 
 # PHYSICS
 
-/control/execute physics/physics.mac
+/control/execute ./physics/physics.mac
+/gate/run/initialize
+
+
+# VISUALIZATION
+/vis/open OGLSQt
+/vis/viewer/set/viewpointThetaPhi 90. 180. deg
+#/vis/viewer/set/viewpointVector 0 1 0
+/vis/viewer/zoom 1.0
+/vis/viewer/set/style surface
+/vis/drawVolume
+/vis/scene/endOfEventAction accumulate 20
+/vis/verbose 2
+/vis/scene/add/axes
+/tracking/storeTrajectory 1
+
 
 # SOURCE
 
-/control/execute sources/source_Tc99m.mac
+/control/execute ./sources/source_Co57.mac
+# /control/execute ./sources/source_Tc99m.mac
+
+
 
 # ACQUISITION
 
-/gate/application/setTimeSlice 0.001
-/gate/application/setTimeStart 0.0
-/gate/application/setTimeStop 10.0
+/gate/application/setTimeSlice 0.1 s
+/gate/application/setTimeStart 0.0 s
+/gate/application/setTimeStop 0.2 s
 
 ## SEED
 
 #/gate/random/setEngineSeed auto
 /gate/random/setEngineSeed 123456789
 
+
 ## START
-/gate/application/start
+# /gate/application/start
