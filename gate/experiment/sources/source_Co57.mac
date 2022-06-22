@@ -1,0 +1,16 @@
+/gate/source/addSource                      Cobalt57 gps
+/gate/source/Cobalt57/gps/particle          gamma
+/gate/source/Cobalt57/setType           UserSpectrum
+/gate/source/Cobalt57/gps/setSpectrumFile   sources/DiscreteSpectrum_Co57.txt
+#gate/source/Cobalt57/setIntensity          1
+/gate/source/Cobalt57/setActivity           1000. becquerel
+
+/gate/source/Cobalt57/gps/type          Point
+#/gate/source/Cobalt57/gps/centre       0. 0. 2. cm
+/gate/source/Cobalt57/gps/ang/type	    iso
+/gate/source/Cobalt57/gps/ang/mintheta	0. deg
+/gate/source/Cobalt57/gps/ang/maxtheta	180. deg
+/gate/source/Cobalt57/gps/ang/minphi	0. deg
+/gate/source/Cobalt57/gps/ang/maxphi	360. deg
+
+/gate/source/Cobalt57/visualize     100 red 1

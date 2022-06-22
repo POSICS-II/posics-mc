@@ -1,0 +1,14 @@
+#### From http://www.nucleide.org/DDEP_WG/Nuclides/Co-57_tables.pdf
+## First line : configuration
+## Following lines : (energy in MeV); (weighted probability)
+1               0
+0.01441295      9.1800
+0.12206065      85.490
+0.13647356      10.710
+0.23027000      0.0004
+0.33967000      0.0038
+0.35234000      0.0032
+0.36674000      0.0013
+0.56994000      0.0150
+0.69201000      0.1590
+0.70641500      0.0050
