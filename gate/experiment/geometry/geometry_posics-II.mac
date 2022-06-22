@@ -12,7 +12,7 @@
 /gate/world/daughters/insert box
 /gate/scanner/geometry/setXLength 0.033 m
 /gate/scanner/geometry/setYLength 0.033 m
-/gate/scanner/geometry/setZLength 0.12 cm
+/gate/scanner/geometry/setZLength 0.12 m
 /gate/scanner/setMaterial Air
 
 ### FRAME
@@ -21,16 +21,17 @@
 /gate/Lid/geometry/setXLength 0.033 m
 /gate/Lid/geometry/setYLength 0.033 m
 /gate/Lid/geometry/setZLength 0.003 m
-/gate/Lid/placement/setTranslation 0. 0. 0.057 m
+/gate/Lid/placement/setTranslation 0. 0. 0.060 m
 /gate/Lid/setMaterial Plastic
 /gate/Lid/vis/setColor white
+/gate/Lid/vis/setVisible
 
 /gate/scanner/daughters/name ShieldBottom
 /gate/scanner/daughters/insert box
 /gate/ShieldBottom/geometry/setXLength 0.033 m
 /gate/ShieldBottom/geometry/setYLength 0.033 m
 /gate/ShieldBottom/geometry/setZLength 0.003 m
-/gate/ShieldBottom/placement/setTranslation 0. 0. -0.057 m
+/gate/ShieldBottom/placement/setTranslation 0. 0. -0.060 m
 /gate/ShieldBottom/setMaterial Lead
 /gate/ShieldBottom/vis/setColor gray
 
@@ -39,7 +40,7 @@
 /gate/ShieldFront/geometry/setXLength 0.033 m
 /gate/ShieldFront/geometry/setYLength 0.003 m
 /gate/ShieldFront/geometry/setZLength 0.12 m
-/gate/ShieldFront/placement/setTranslation 0. 0.057 0 m
+/gate/ShieldFront/placement/setTranslation 0. 0.015 0 m
 /gate/ShieldFront/setMaterial Lead
 /gate/ShieldFront/vis/setColor gray
 
@@ -48,27 +49,27 @@
 /gate/ShieldBack/geometry/setXLength 0.033 m
 /gate/ShieldBack/geometry/setYLength 0.003 m
 /gate/ShieldBack/geometry/setZLength 0.12 m
-/gate/ShieldBack/placement/setTranslation 0. -0.057 0. m
+/gate/ShieldBack/placement/setTranslation 0. -0.015 0. m
 /gate/ShieldBack/setMaterial Lead
 /gate/ShieldBack/vis/setColor gray
 
 /gate/scanner/daughters/name ShieldRight
 /gate/scanner/daughters/insert box
-/gate/ShieldBack/geometry/setXLength 0.003 m
-/gate/ShieldBack/geometry/setYLength 0.033 m
-/gate/ShieldBack/geometry/setZLength 0.12 m
-/gate/ShieldBack/placement/setTranslation 0.057 0. 0. m
-/gate/ShieldBack/setMaterial Lead
-/gate/ShieldBack/vis/setColor gray
+/gate/ShieldRight/geometry/setXLength 0.003 m
+/gate/ShieldRight/geometry/setYLength 0.033 m
+/gate/ShieldRight/geometry/setZLength 0.12 m
+/gate/ShieldRight/placement/setTranslation -0.015 0. 0. m
+/gate/ShieldRight/setMaterial Lead
+/gate/ShieldRight/vis/setColor gray
 
 /gate/scanner/daughters/name ShieldLeft
 /gate/scanner/daughters/insert box
-/gate/ShieldBack/geometry/setXLength 0.003 m
-/gate/ShieldBack/geometry/setYLength 0.033 m
-/gate/ShieldBack/geometry/setZLength 0.12 m
-/gate/ShieldBack/placement/setTranslation -0.057 0. 0. m
-/gate/ShieldBack/setMaterial Lead
-/gate/ShieldBack/vis/setColor gray
+/gate/ShieldLeft/geometry/setXLength 0.003 m
+/gate/ShieldLeft/geometry/setYLength 0.033 m
+/gate/ShieldLeft/geometry/setZLength 0.12 m
+/gate/ShieldLeft/placement/setTranslation 0.015 0. 0. m
+/gate/ShieldLeft/setMaterial Lead
+/gate/ShieldLeft/vis/setColor gray
 
 ### COLLIMATOR
 
