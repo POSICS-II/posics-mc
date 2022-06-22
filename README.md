@@ -123,6 +123,8 @@ echo 'export PATH=/path/to/gate-9.2-install/bin:$PATH' >> /path/to/setup_GATE.sh
 echo 'module load GCC/11.2.0 OpenMPI/4.1.1 Qt5/5.15.2 ROOT/6.24.06' >> /path/to/setup_GATE.sh
 ```
 
+You will find more information on GATE installation here: https://opengate.readthedocs.io/en/latest/installation.html
+
 ## Running GATE
 
 Login to the baobab and execute the `setup_GATE.sh` file.
